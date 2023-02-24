@@ -7,6 +7,9 @@ public class UsuarioJuego {
     private double puntaje;
     private int nivel;
 
+    private static final double puntajeDef = 0;
+    private static final int nivelDef = 0;
+
     public static void main(String[] args) {
         UsuarioJuego usuario = new UsuarioJuego("Adriana", "abc123");
         System.out.println(usuario.toString());
@@ -22,8 +25,8 @@ public class UsuarioJuego {
     public UsuarioJuego(String nombre, String clave) {
         this.nombre = nombre;
         this.clave = clave;
-        this.puntaje = 0;
-        this.nivel = 0;
+        this.puntaje = puntajeDef;
+        this.nivel = nivelDef;
     }
 
     public String getNombre() {
